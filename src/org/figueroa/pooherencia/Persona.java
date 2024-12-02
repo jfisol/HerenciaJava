@@ -59,4 +59,14 @@ public class Persona {
     public String Saludar(){
        return "Hola que tal!";
     }
+
+    //Sobreescritura de ToString
+    @Override
+    public String toString() {
+        return   "nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", edad=" + edad +
+                ", email='" + email + '\'' +
+                "Saludaro" + this.Saludar();
+    }
 }
